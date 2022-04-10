@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <!-- TODO (04) Add a fragment tag for the titleFragment in the LinearLayout
+             Use @+id/titleFragment for the android:id
+             Use com.example.android.navigation.TitleFragment for the android:name
+             Use match_parent for the layout_height and layout_width -->
+        <fragment
+            android:id="@+id/myNavHostFragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/navigation" />
+    </LinearLayout>
+
+</layout>
+<!--<layout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto">-->
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        xmlns:tools="http://schemas.android.com/tools"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        tools:context=".MainActivity">-->
+
+<!--        <TableLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginStart="8dp"-->
+<!--            android:layout_marginTop="100dp"-->
+<!--            android:layout_marginEnd="8dp"-->
+<!--            android:layout_marginBottom="100dp"-->
+<!--            android:background="@drawable/grid_outside"-->
+<!--            android:stretchColumns="*"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent">-->
+
+<!--            <TableRow-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="@drawable/grid_outside">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="0sp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1.5"-->
+<!--                    android:background="@drawable/grid_outside"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text=""-->
+<!--                    android:textSize="18sp" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="0sp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="3"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Mon"-->
+<!--                    android:textSize="18sp" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="0sp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="3"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Tue"-->
+<!--                    android:textSize="18sp" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="0sp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="3"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Wed"-->
+<!--                    android:textSize="18sp" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="0sp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="3"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Thu"-->
+<!--                    android:textSize="18sp" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="0sp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="3"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Fri"-->
+<!--                    android:textSize="18sp" />-->
+
+<!--            </TableRow>-->
+
+
+<!--            <TableRow-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/grid_outside">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="0.5"-->
+<!--                    android:background="@drawable/grid_outside"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="1"-->
+<!--                    android:textSize="18sp" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/mon1"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/grid_outside"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text=""-->
+<!--                    android:textSize="18sp" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/tue1"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/grid_outside"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text=""-->
+<!--                    android:textSize="18sp"-->
+<!--                    tools:ignore="SpeakableTextPresentCheck" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/wed1"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/grid_outside"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text=""-->
+<!--                    android:textSize="18sp" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/thu1"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/grid_outside"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text=""-->
+<!--                    android:textSize="18sp" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/fri1"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/grid_outside"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text=""-->
+<!--                    android:textSize="18sp" />-->
+
+<!--            </TableRow>-->
+
+<!--            <TableRow-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/grid_outside">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="0.5"-->
+<!--                    android:background="@drawable/grid_outside"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="2"-->
+<!--                    android:textSize="18sp" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/mon2"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/grid_outside"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text=""-->
+<!--                    android:textSize="18sp" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/tue2"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/grid_outside"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text=""-->
+<!--                    android:textSize="18sp" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/wed2"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/grid_outside"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text=""-->
+<!--                    android:textSize="18sp" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/thu2"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/grid_outside"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text=""-->
+<!--                    android:textSize="18sp" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/fri2"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/grid_outside"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text=""-->
+<!--                    android:textSize="18sp" />-->
+
+<!--            </TableRow>-->
+
+<!--            <TableRow-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/grid_outside">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="0.5"-->
+<!--                    android:background="@drawable/grid_outside"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="3"-->
+<!--                    android:textSize="18sp" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/mon3"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/grid_outside"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text=""-->
+<!--                    android:textSize="18sp" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/tue3"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/grid_outside"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text=""-->
+<!--                    android:textSize="18sp" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/wed3"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/grid_outside"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text=""-->
+<!--                    android:textSize="18sp" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/thu3"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/grid_outside"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text=""-->
+<!--                    android:textSize="18sp" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/fri3"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/grid_outside"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text=""-->
+<!--                    android:textSize="18sp" />-->
+
+<!--            </TableRow>-->
+
+<!--            <TableRow-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/grid_outside">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="0.5"-->
+<!--                    android:background="@drawable/grid_outside"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="4"-->
+<!--                    android:textSize="18sp" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/mon4"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/grid_outside"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text=""-->
+<!--                    android:textSize="18sp" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/tue4"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/grid_outside"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text=""-->
+<!--                    android:textSize="18sp" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/wed4"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/grid_outside"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text=""-->
+<!--                    android:textSize="18sp" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/thu4"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/grid_outside"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text=""-->
+<!--                    android:textSize="18sp" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/fri4"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/grid_outside"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text=""-->
+<!--                    android:textSize="18sp" />-->
+
+<!--            </TableRow>-->
+
+<!--            <TableRow-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/grid_outside">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="0.5"-->
+<!--                    android:background="@drawable/grid_outside"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="5"-->
+<!--                    android:textSize="18sp" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/mon5"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/grid_outside"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text=""-->
+<!--                    android:textSize="18sp" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/tue5"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/grid_outside"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text=""-->
+<!--                    android:textSize="18sp" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/wed5"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/grid_outside"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text=""-->
+<!--                    android:textSize="18sp" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/thu5"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/grid_outside"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text=""-->
+<!--                    android:textSize="18sp" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/fri5"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@drawable/grid_outside"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text=""-->
+<!--                    android:textSize="18sp" />-->
+
+<!--            </TableRow>-->
+
+
+<!--        </TableLayout>-->
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--</layout>-->

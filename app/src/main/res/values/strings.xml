@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TimeTableApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="C_6101">CSCI 6101</string>
+    <string name="C_6212">CSCI 6212</string>
+    <string name="C_6221">CSCI 6221</string>
+    <string name="C_6232">CSCI 6232</string>
+    <string name="C_6231">"CSCI 6231"</string>
+    <string name="Done">DONE</string>
+    <string name="Edit">EDIT</string>
+    <string name="appName">TimeTable App</string>
+    <string name="About">This timetable app is developed by students at GWU /-</string>
+    <string name="ClassInfo">Class Info</string>
+    <string name="description">View description</string>
+</resources>
